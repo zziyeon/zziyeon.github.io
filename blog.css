@@ -184,7 +184,7 @@ body section:nth-child(2) {
 
 /* PORTFOLIO */
 #portfolio {
-    display: ;
+    display: flex;
 }
 .portfolio_wrap {
     display: flex;
