@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* * { outline: 1px solid rosybrown; } */
+* { outline: 1px solid rosybrown; }
 
 body {
     width: 100%;
@@ -44,11 +44,12 @@ body section:nth-child(2) {
     padding-top: 0;
 }
 
-/* HOME */
+/* -------------------HOME-------------------------------------------------------------------------------- */
 #home {
     width: 100%;
     height: 960px;
     position: relative;
+    text-align: center;
 }
 
 #home video {
@@ -62,10 +63,11 @@ body section:nth-child(2) {
 #home .home_introduce {
     position: absolute;
     z-index: 3; 
-    bottom: 50%;
-    left: 45%;
-    background-color: rgba(227, 230, 232, 0.376);
+    bottom: 55%;
+    left: 30%;
+    /* background-color: rgba(227, 230, 232, 0.376); */
     color: white;
+    font-size: 50px;
 }
 
 .home_scroll_ani {
@@ -101,7 +103,7 @@ body section:nth-child(2) {
     width: 18px;
     height: 18px;
     content: '';
-    margin-left: -9px;
+    margin-left: -8.5px;
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: rotate(-45deg);
@@ -134,7 +136,7 @@ body section:nth-child(2) {
     color: white;
 }
 
-/* ABOUT ME */
+/* ------------------------------ABOUT ME--------------------------------------------------------------------------- */
 #aboutMe {
     position: relative;
     padding: 20px 0;
@@ -143,15 +145,15 @@ body section:nth-child(2) {
 }
 
 .aboutMe_left {
-    flex: 1;
     height: 570px;
 }
 
 .aboutMe_left h2 {
     position: absolute;
     padding-left: 20px;
-    top: 0px;
+    top: -10px;
     z-index: 3;
+    font-size: 50px;
 }
 
 .aboutMe_left .background {
@@ -176,19 +178,31 @@ body section:nth-child(2) {
 
 .aboutMe_right {
     z-index: 3;
-    flex: 1;
-    display: flex;
+    position: absolute;
+    top:140px;
     align-items: center;
-    height: 570px;
+    left: 650px;
 }
 
-.aboutMe_right ul {
-    width: 650px;
-    height: 280px;
-    padding-left: 15px;
+.aboutMe_right table {
+    font-size: 24px;
+    width: 700px;
 }
 
-/* skills */
+.aboutMe_right tr {
+    height: 40px;
+}
+
+.aboutMe_right th {
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+.aboutMe_right td {
+    font-weight: 300;
+}
+
+/* -------------- skills --------------------------------------------------------------------------------*/
 #skills {
     display: flex;
     flex-direction: column;
@@ -198,6 +212,10 @@ body section:nth-child(2) {
 
 .skills_title {
     margin-bottom: 50px;
+}
+
+.skills_title h2 {
+    font-size: 50px;
 }
 
 #skills img {
@@ -212,6 +230,11 @@ body section:nth-child(2) {
     justify-content: center;
 }
 
+.portfolio_title h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
 .portfolio_title h3 {
     margin: 30px 0;
 }
@@ -222,6 +245,22 @@ body section:nth-child(2) {
 .portfolio_wrap .portfolio_left {
     flex: 1;
 }
+.portfolio_wrap .portfolio_left a {
+    outline: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.portfolio_wrap .portfolio_left a:hover {
+    background-color: rgb(164, 164, 164);
+    color: white;
+    font-weight: 700;
+}
+
+.portfolio_wrap .portfolio_left a i {
+    padding-right: 10px;
+}
 
 .portfolio_wrap .portfolio_right {
     flex: 1;
@@ -231,4 +270,41 @@ body section:nth-child(2) {
     display: flex;
     justify-content: center;
     width: 450px;
+}
+
+/*------------------------- CONTACT --------------------------------------------------------------------------------*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h2 {
+    font-size: 50px;
+}
+
+/*------------------------- footer --------------------------------------------------------------------------------*/
+footer {
+    height: 100px;
+    background-color: beige;
+}
+
+footer div {
+    padding-top: 35px;
+    text-align: center;
+}
+footer p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.aboutMe_right .two {
+    background-color: aqua;
+    /* display: none; */
 }

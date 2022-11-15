@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김지연 포트폴리오</title>
     <link rel="stylesheet" href="/blog.css">
-    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="/blog.js">
     <script src="https://kit.fontawesome.com/132ba309f6.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +24,7 @@
     <section id="home">
         <video src="/img/배너.mp4" muted autoplay loop></video>
         <div class="home_introduce">
-            <p>안녕하세요</p>
+            <p>안녕하세요.</p>
             <p> 김지연 포트폴리오 입니다.</p>
         </div>
         <div class="home_scroll_wrap">
@@ -42,21 +42,40 @@
             </div>
         </div>
         <div class="aboutMe_right">
-            <ul>
-                <li>
-                    이름 : 김지연
-                    <br>
-                    나이 : 25세
-                    <br>
-                    학력 : 울산대학교 IT융합 학과 졸업
-                    <br>
-                    수료 내역 : 2022.05 ~ 2022.10 (주)울산 KH 정보교육원
-                    <br>
-                    스마트 웹 & 콘텐츠 개발 프로젝트 과정 (6개월)
-                    <br>
-                    자격증 : 정보처리기사
-                </li>
-            </ul>    
+            <table class="one">
+                <tr>
+                    <th>이름</th>
+                    <td>김지연</td>
+                </tr>
+                <tr>
+                    <th>나이</th>
+                    <td>25세</td>
+                </tr>
+                <tr>
+                    <th>학력</th>
+                    <td>울산대학교 IT융합학과 졸업</td>
+                </tr>
+                <tr>
+                    <th>수료 내역</th>
+                    <td>2022.05 ~ 2022.10 (주)울산 KH 정보교육원</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>스마트 웹 & 콘텐츠 개발 프로젝트 과정</td>
+                </tr>
+                <tr>
+                    <th>자격증</th>
+                    <td>정보처리기사</td>
+                </tr>
+                <tr>
+                    <th>사회 경험</th>
+                    <td>2021.09 ~ 2021.12 </td>
+                </tr>
+            </table>
+            <ul class="two">
+                <li>sfef</li>
+            </ul>
+            <button class="btn">버튼</button>
         </div>
     </section>
 
@@ -93,11 +112,26 @@
     </section>
     
     <section id="contact">
-        <h2> Contact </h2>
-        <div>
-            <p><i class="fa-regular fa-envelope"></i> jiyunsara99@naver.com</p>
-            <p><i class="fa-solid fa-phone"></i> 010-4155-6297</p>
+        <div class="contact_title">
+            <h2> Contact </h2>
+            <hr>
+        </div>
+        <div class="contact_left">
+            <div class="contact_pInfo">
+                <p><i class="fa-regular fa-envelope"></i> jiyunsara99@naver.com</p>
+                <p><i class="fa-solid fa-phone"></i> 010-4155-6297</p>
+            </div>
+            <div class="contact_link">
+                <a href="https://github.com/zziyeon"><i class="fa-brands fa-github"></i>Git 바로가기</a>
+            </div>
         </div>
     </section>
+    
+    <footer>
+        <div>
+            <p>본 페이지는 개인 포트폴리오용으로 제작되었습니다.</p>
+            <p>ⓒ2022. Kim Ji-Yeon. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
