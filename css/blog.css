@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-/* * { outline: 1px solid rosybrown; } */
+* { outline: 1px solid rosybrown; }
 
 body {
     width: 100%;
 }
 
 nav {
-    z-index: 2;
+    z-index: 5;
     width: 100%;
     position: fixed;
     background-color: rgba(205, 203, 200, 0.611);
@@ -22,18 +22,23 @@ nav ul{
 
 nav ul li {
     width: 200px;
-    height: 60px;
+    height: 65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
 }
 
-nav ul li:hover {
+nav ul li span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav ul li span:hover {
     text-decoration: underline;
     font-size: 20px;
     overflow: hidden;
+    font-weight: 800;
 }
 
 body section {
@@ -172,7 +177,7 @@ body section:nth-child(2) {
 
 .aboutMe_left .aboutMe_photo img {
     position: absolute;
-    top: 20px;
+    top: 30px;
     width: 360px;
 }
 
@@ -181,25 +186,44 @@ body section:nth-child(2) {
     position: absolute;
     top:140px;
     align-items: center;
-    left: 650px;
+    left: 630px;
 }
 
-.aboutMe_right table {
-    font-size: 24px;
-    width: 700px;
-}
-
-.aboutMe_right tr {
+.aboutMe_right .aboutMeBtn {
+    display: flex;
+    justify-content: center;
     height: 40px;
 }
 
-.aboutMe_right th {
-    font-weight: 700;
-    padding-right: 15px;
+.aboutMe_right .aboutMeBtn button {
+    font-size: 30px;
+    background-color: #fff;
+    border: none;
+    margin: 0 10px;
+    padding: 0 6px;
 }
 
-.aboutMe_right td {
+.aboutMe_right .aboutMeBtn button:hover {
+    border: 1px solid grey;
+    border-radius: 30%;
+}
+
+.aboutMe_right ul{
+    width: 700px;
+    font-size: 22px;
+}
+
+.aboutMe_right ul li {
+    display: flex;
     font-weight: 300;
+    padding: 5px;
+    align-items: center;
+}
+
+.aboutMe_right ul li p {
+    font-weight: 700;
+    text-align: center;
+    width: 140px;
 }
 
 /* -------------- skills --------------------------------------------------------------------------------*/
@@ -237,13 +261,15 @@ body section:nth-child(2) {
 
 .portfolio_title h3 {
     margin: 30px 0;
+    font-size: 20px;
 }
 
 .portfolio_wrap {
     display: flex;
+    margin-top: 25px;
 }
 .portfolio_wrap .portfolio_left {
-    flex: 1;
+    width: 550px;
 }
 .portfolio_wrap .portfolio_left a {
     outline: 1px solid gray;
@@ -253,7 +279,7 @@ body section:nth-child(2) {
 }
 
 .portfolio_wrap .portfolio_left a:hover {
-    background-color: rgb(164, 164, 164);
+    background-color: rgb(125, 125, 125);
     color: white;
     font-weight: 700;
 }
@@ -263,13 +289,15 @@ body section:nth-child(2) {
 }
 
 .portfolio_wrap .portfolio_right {
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 600px;
 }
 
 .portfolio_wrap .portfolio_right img {
     display: flex;
     justify-content: center;
-    width: 450px;
+    width: 430px;
 }
 
 /*------------------------- CONTACT --------------------------------------------------------------------------------*/
@@ -285,26 +313,17 @@ body section:nth-child(2) {
 
 /*------------------------- footer --------------------------------------------------------------------------------*/
 footer {
-    height: 100px;
+    height: 130px;
     background-color: beige;
 }
 
 footer div {
-    padding-top: 35px;
+    padding-top:25px;
     text-align: center;
 }
 footer p {
     font-weight: 300;
-    font-size: 12px;
-}
-
-
-
-
-
-
-
-.aboutMe_right .two {
-    background-color: aqua;
-    /* display: none; */
+    font-size: 13px;
+    letter-spacing: 4px;
+    height: 30px;
 }

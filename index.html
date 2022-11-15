@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김지연 포트폴리오</title>
-    <link rel="stylesheet" href="/blog.css">
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="/blog.js">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <script defer src="/blog.js"></script>
     <script src="https://kit.fontawesome.com/132ba309f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <ul>
-            <li><span>HOME</span></li>
-            <li><span>ABOUT ME</span></li>
-            <li><span>SKILLS</span></li>
-            <li><span>PORTFOLIO</span></li>
-            <li><span>CONTACT</span></li>
+            <li><span class="nav_home">HOME</span></li>
+            <li><span class="nav_aboutMe">ABOUT ME</span></li>
+            <li><span class="nav_skills">SKILLS</span></li>
+            <li><span class="nav_portfolio">PORTFOLIO</span></li>
+            <li><span class="nav_contact">CONTACT</span></li>
         </ul>
     </nav>
 
@@ -38,44 +38,44 @@
             <h2> About me </h2>
             <div class="background"></div>
             <div class="aboutMe_photo">
-                <img src="/img/운전면허증.jpg" alt="">
+                <img src="/img/증명사진.jpg" alt="">
             </div>
         </div>
         <div class="aboutMe_right">
-            <table class="one">
-                <tr>
-                    <th>이름</th>
-                    <td>김지연</td>
-                </tr>
-                <tr>
-                    <th>나이</th>
-                    <td>25세</td>
-                </tr>
-                <tr>
-                    <th>학력</th>
-                    <td>울산대학교 IT융합학과 졸업</td>
-                </tr>
-                <tr>
-                    <th>수료 내역</th>
-                    <td>2022.05 ~ 2022.10 (주)울산 KH 정보교육원</td>
-                </tr>
-                <tr>
-                    <th></th>
+            <div class="aboutMeBtn">
+                <button class="prevBtn"><i class="fa-solid fa-caret-left"></i></button>
+                <button class="nextBtn"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <ul class="one">
+                <li>
+                    <p>이름</p> 김지연
+                </li>
+                <li>
+                    <p>나이</p> 25세
+                </li>
+                <li>
+                    <p>학력</p> 울산대학교 IT융합학과 졸업 
+                </li>
+                <li>
+                    <p>수료 내역</p> 2022.05 ~ 2022.10 (주)울산 KH 정보교육원 
+                </li>
+                <li>
+                    <p> </p>
                     <td>스마트 웹 & 콘텐츠 개발 프로젝트 과정</td>
-                </tr>
-                <tr>
-                    <th>자격증</th>
-                    <td>정보처리기사</td>
-                </tr>
-                <tr>
+                </li>
+                <li>
+                    <p>자격증</p> 정보처리기사 
+                </li>
+                <!-- <tr>
                     <th>사회 경험</th>
                     <td>2021.09 ~ 2021.12 </td>
-                </tr>
-            </table>
-            <ul class="two">
-                <li>sfef</li>
+                </tr> -->
             </ul>
-            <button class="btn">버튼</button>
+            <ul class="two" style="display: none;">
+                <li>
+                    <p>사회 경험</p>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -99,11 +99,15 @@
         <div class="portfolio_title">
             <h2> Portfolio </h2>
             <hr>
-            <h3> 마감 할인 상품 판매 플랫폼 </h3>
+            <!-- <h3> 마감 할인 상품 판매 플랫폼 </h3> -->
         </div>
         <div class="portfolio_wrap">
             <div class="portfolio_left">
-                <a href="https://github.com/zziyeon/GREAT.git"><i class="fa-brands fa-github"></i>Git 바로가기</a>
+                <p>담당 파트</p> 상품 판매 관리, 상품 목록
+                <div>
+                    <a href="https://www.youtube.com/watch?v=PFDcnkVL-DI" target="_blank"><i class="fa-solid fa-film"></i>시연 동영상</a>
+                    <a href="https://github.com/zziyeon/GREAT.git" target="_blank"><i class="fa-brands fa-github"></i>Git 바로가기</a>
+                </div>
             </div>
             <div class="portfolio_right">
                 <img src="/img/메인화면.png" alt="">
@@ -122,7 +126,7 @@
                 <p><i class="fa-solid fa-phone"></i> 010-4155-6297</p>
             </div>
             <div class="contact_link">
-                <a href="https://github.com/zziyeon"><i class="fa-brands fa-github"></i>Git 바로가기</a>
+                <a href="https://github.com/zziyeon" target="_blank"><i class="fa-brands fa-github"></i>Git 바로가기</a>
             </div>
         </div>
     </section>
