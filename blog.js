@@ -77,6 +77,35 @@ detailBtn.addEventListener('click', e=>{
 });
 
 //모달 팝업 닫기
+const outer = document.querySelector('.portfolio_modal');
+const closeBtn = document.querySelector('.fa-xmark');
+
 function close(){
     document.querySelector('.portfolio_modal').className="portfolio_modal";
 }
+
+outer.addEventListener('click', e=>{
+    if(e.target.className == e.currentTarget.className) {
+        close();
+    }
+});
+
+closeBtn.addEventListener('click',e=>{
+    close();
+});
+
+//모달 팝업 nav 버튼
+const modalNavBtn = document.querySelector('.modal_btn');
+
+modalNavBtn.addEventListener('click', e=>{
+    let sss = e.target.className;
+    if(e.target.tagName == 'BUTTON'){
+        for(let i=0; i<6; i++){
+            document.querySelectorAll('.modal_btn button')[i].classList.remove('click');
+            document.querySelectorAll('.modal_img_list img')[i].classList.remove('aaa');
+            document.querySelectorAll('.modal_img_list img')[i].style.display='none';
+        }
+        e.target.classList.add('click');
+        document.getElementsByClassName(sss)[1].style.display='block';
+    }
+})
