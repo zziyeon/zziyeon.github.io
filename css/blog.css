@@ -70,7 +70,7 @@ body section:nth-child(2) {
     position: absolute;
     z-index: 3; 
     bottom: 55%;
-    left: 30%;
+    left: 40%;
     /* background-color: rgba(227, 230, 232, 0.376); */
     color: white;
     font-size: 50px;
@@ -361,6 +361,52 @@ body section:nth-child(2) {
     justify-content: center;
     width: 430px;
 }
+
+/* 포트폴리오 모달 팝업 */
+.portfolio_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    opacity: 0;
+}
+
+.portfolio_modal .modal_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio_modal .modal_wrap .pop_up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.portfolio_modal .modal_wrap .pop_up .modal_close a {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: yellowgreen;
+}
+
+.show {
+    z-index: 10;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
 
 /*------------------------- CONTACT ---------------------------------------------------*/
 #contact {

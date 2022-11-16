@@ -68,3 +68,15 @@ function nextBtn(e){
 
 prev.addEventListener('click',prevBtn);
 next.addEventListener('click',nextBtn);
+
+//모달 팝업 열기
+const detailBtn = document.querySelector('.detail_btn');
+
+detailBtn.addEventListener('click', e=>{
+    document.querySelector('.portfolio_modal').className = "portfolio_modal show";
+});
+
+//모달 팝업 닫기
+function close(){
+    document.querySelector('.portfolio_modal').className="portfolio_modal";
+}
