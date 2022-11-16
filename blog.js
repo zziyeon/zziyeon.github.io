@@ -34,7 +34,11 @@ nav_contact.addEventListener('click', e=>{
     window.scrollTo({top:scroll_contact-nav_height, behavior:'smooth'});
 });
 
-
+// scroll 아이콘
+const scroll = document.querySelector('.home_scroll_wrap');
+scroll.addEventListener('click', e=> {
+    window.scrollTo({top:scroll_aboutMe-nav_height, behavior:'smooth'});
+})
 
 // aboutMe_right 버튼
 const prev = document.querySelector('.prevBtn');

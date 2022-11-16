@@ -22,7 +22,7 @@ nav ul{
 
 nav ul li {
     width: 200px;
-    height: 65px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,8 +37,9 @@ nav ul li span {
 nav ul li span:hover {
     text-decoration: underline;
     font-size: 20px;
-    overflow: hidden;
     font-weight: 800;
+    text-decoration: wavy rgb(39, 12, 12) underline;
+    text-underline-position: under;
 }
 
 body section {
@@ -75,6 +76,10 @@ body section:nth-child(2) {
     font-size: 50px;
 }
 
+.home_scroll_wrap:hover {
+    cursor: pointer;
+}
+
 .home_scroll_ani {
     position: absolute;
     top: 800px;
@@ -109,8 +114,8 @@ body section:nth-child(2) {
     height: 18px;
     content: '';
     margin-left: -8.5px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
@@ -134,14 +139,15 @@ body section:nth-child(2) {
 }
 
 .home_scroll {
+    font-weight: bold;
     position: absolute;
     top: 870px;
-    left: 50%;
+    left: 49.8%;
     margin-left: -18px;
     color: white;
 }
 
-/* ------------------------------ABOUT ME--------------------------------------------------------------------------- */
+/* -------------------------ABOUT ME--------------------------------------------------------- */
 #aboutMe {
     position: relative;
     padding: 20px 0;
@@ -155,7 +161,7 @@ body section:nth-child(2) {
 
 .aboutMe_left h2 {
     position: absolute;
-    padding-left: 20px;
+    padding-left: 40px;
     top: -10px;
     z-index: 3;
     font-size: 50px;
@@ -171,8 +177,8 @@ body section:nth-child(2) {
 .aboutMe_left .aboutMe_photo {
     position: absolute;
     width: 100px;
-    top: 20px;
-    left: 20px;
+    top: 50px;
+    left: 60px;
 }
 
 .aboutMe_left .aboutMe_photo img {
@@ -191,13 +197,13 @@ body section:nth-child(2) {
 
 .aboutMe_right .aboutMeBtn {
     display: flex;
-    justify-content: center;
     height: 40px;
+    margin-left: 25%;
 }
 
 .aboutMe_right .aboutMeBtn button {
     font-size: 30px;
-    background-color: #fff;
+    background-color: rgba(105, 63, 63, 0);
     border: none;
     margin: 0 10px;
     padding: 0 6px;
@@ -209,7 +215,7 @@ body section:nth-child(2) {
 }
 
 .aboutMe_right ul{
-    width: 700px;
+    width: 1000px;
     font-size: 22px;
 }
 
@@ -226,7 +232,16 @@ body section:nth-child(2) {
     width: 140px;
 }
 
-/* -------------- skills --------------------------------------------------------------------------------*/
+.aboutMe_right .two p {
+    width: 100px;
+}
+
+.aboutMe_right ul li span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* -------------- skills -------------------------------------------------------------------*/
 #skills {
     display: flex;
     flex-direction: column;
@@ -242,11 +257,29 @@ body section:nth-child(2) {
     font-size: 50px;
 }
 
+.skills_wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills_wrap h3 {
+    width: 400px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.skills_wrap .skills_img {
+    display: flex;
+    justify-content: space-around;
+}
+
 #skills img {
     width: 85px;
 }
 
-/* PORTFOLIO */
+/*----------------------- PORTFOLIO -----------------------------------------*/
 #portfolio {
     display: flex;
     flex-direction: column;
@@ -259,23 +292,51 @@ body section:nth-child(2) {
     font-size: 50px;
 }
 
-.portfolio_title h3 {
-    margin: 30px 0;
-    font-size: 20px;
-}
-
 .portfolio_wrap {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 25px;
 }
 .portfolio_wrap .portfolio_left {
-    width: 550px;
+    width: 540px;
 }
+
+.portfolio_wrap .portfolio_left .portfolio_topic {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.portfolio_wrap .portfolio_left .portfolio_content {
+    display: inline-block;
+    line-height: 35px;
+    height: 200px;
+    font-size: 18px;
+    justify-items: center;
+}
+
+.portfolio_wrap .portfolio_left span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portfolio_wrap .portfolio_left .portfolio_btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.portfolio_wrap .portfolio_left a i {
+    font-size: 20px;
+}
+
 .portfolio_wrap .portfolio_left a {
-    outline: 1px solid gray;
+    font-weight: 700;
+    outline: 2px solid gray;
     border-radius: 10px;
     padding: 10px;
-    font-weight: 500;
+    margin: 0 15px;
 }
 
 .portfolio_wrap .portfolio_left a:hover {
@@ -284,14 +345,15 @@ body section:nth-child(2) {
     font-weight: 700;
 }
 
-.portfolio_wrap .portfolio_left a i {
+.portfolio_wrap .portfolio_left i {
     padding-right: 10px;
+    font-size: 20px;
 }
 
 .portfolio_wrap .portfolio_right {
     display: flex;
     justify-content: center;
-    width: 600px;
+    width: 500px;
 }
 
 .portfolio_wrap .portfolio_right img {
@@ -300,15 +362,24 @@ body section:nth-child(2) {
     width: 430px;
 }
 
-/*------------------------- CONTACT --------------------------------------------------------------------------------*/
+/*------------------------- CONTACT ---------------------------------------------------*/
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contact h2 {
+.contact_title {
+    margin-bottom: 25px;
+}
+
+.contact_title h2 {
     font-size: 50px;
+}
+
+.contact_left i {
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 /*------------------------- footer --------------------------------------------------------------------------------*/
@@ -318,7 +389,7 @@ footer {
 }
 
 footer div {
-    padding-top:25px;
+    padding-top:35px;
     text-align: center;
 }
 footer p {
