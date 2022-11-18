@@ -108,4 +108,31 @@ modalNavBtn.addEventListener('click', e=>{
         e.target.classList.add('click');
         document.getElementsByClassName(sss)[1].style.display='block';
     }
-})
+});
+
+// 스크롤시 화면 fade in/out
+const windowMargin = 300;
+const sectionList = document.querySelectorAll("section");
+
+const showFunc=() =>{
+    for(const ele of sectionList){
+        for(const sss of sectionList){
+            if(sss.classList.contains('show')){
+                if(window.innerHeight < sss.getBoundingClientRect().top + windowMargin){
+                    sss.classList.remove('show');
+                }
+            }
+        }
+        if(!ele.classList.contains('show')){
+            if( window.innerHeight > ele.getBoundingClientRect().top + windowMargin ){
+                ele.classList.add('show');
+            }
+            // if(window.innerHeight < ele.getBoundingClientRect().top + windowMargin){
+            //     ele.classList.remove('show');
+            // }
+        }
+    }
+};
+
+window.addEventListener('load', showFunc);
+window.addEventListener('scroll', showFunc);    
