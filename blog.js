@@ -45,7 +45,6 @@ const prev = document.querySelector('.prevBtn');
 const next = document.querySelector('.nextBtn');
 
 function prevBtn(e){
-    console.log('클릭1');
     const one = document.querySelector('.one');
     const two = document.querySelector('.two');
     
@@ -56,7 +55,6 @@ function prevBtn(e){
 }
 
 function nextBtn(e){
-    console.log('클릭2');
     const one = document.querySelector('.one');
     const two = document.querySelector('.two');
     
@@ -127,9 +125,6 @@ const showFunc=() =>{
             if( window.innerHeight > ele.getBoundingClientRect().top + windowMargin ){
                 ele.classList.add('show');
             }
-            // if(window.innerHeight < ele.getBoundingClientRect().top + windowMargin){
-            //     ele.classList.remove('show');
-            // }
         }
     }
 };
