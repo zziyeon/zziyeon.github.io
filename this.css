@@ -1,0 +1,11 @@
+.this {
+    display: flex;
+}
+.tool-bar {
+    background-color: yellow;
+    flex: 1;
+}
+.template_container {
+    background-color: red;
+    flex: 5;
+}
